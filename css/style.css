@@ -1,0 +1,198 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+.logo {
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+.navigation {
+    display: flex;
+    background-color: #4A5775;
+}
+#logo {
+    width: 100px;
+    background-color: white;
+    padding: 18px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border-radius: 12px;
+}
+nav {
+    width: 73%;
+    padding: 1%
+}
+ul {
+    width: 50%;
+    margin-left: auto;
+    display: inline-block;
+    vertical-align: top;
+}
+li {
+    padding: 5px;
+    text-align: center;
+}
+.heroImg {
+    height: 620px;
+    padding: 25px;
+}
+.content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+    border-color: #6A6A6A;
+    border-width: 1px;
+    border-radius: 8px;
+    border-style: outset;
+    padding: 16px;
+    background-color: #C88A5C;
+    box-shadow: 5px 8px 12px lightgrey;
+}
+footer {
+    background-color: #4A5775;
+    padding:10px;
+}
+.footerText {
+    color: #FFB57E;
+    font-family:"Lato";
+}
+.headerText {
+    color: #FFB57E;
+    font-family:"Lato";
+}
+#heroText {
+    color: #3B455B;
+    font-family:"Lato";
+}
+.heroPtextArea {
+    background-color:#FFDABF;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 1px solid #6A6A6A;
+}
+.heroImage {
+    height: 400px;
+    width: 400px;
+}
+button {
+    margin-top: 10px;
+    font-family:"Lato";
+    box-shadow: 3px 6px 8px #A7734C;
+    padding: 6px;
+    width: 200px;
+}
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+}
+.caseStudyImg {
+    height:500px;
+}
+.caseStudyLogo {
+    width: 100%;
+    /* padding:20px; */
+}
+.workCard {
+    display: flex;
+    padding: 20px;
+}
+.mock {
+    padding: 20px;
+
+}
+.skillCard {
+    width: 31%;
+    padding: 1%;
+    margin: 2%;
+    background-color: #4A5775;
+    border-radius: 8px;
+    text-align: center;
+}
+.skillIcon {
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+.learnMore {
+    align-self: center;
+}
+p {
+    color: #3B455B;
+    font-family: "lato";
+}
+h3 {
+    color: #3B455B;
+    font-family: "lato";
+}
+.skillText {
+    color: white;
+}
+.myWork {
+    background-color: #C88A5C;
+    padding: 1%;
+}
+.caseStudyInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background-color: white;
+    padding: 20px;
+    height: 500px;
+}
+.workGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    grid-template-areas:
+    "melodyMock melodyInfo melodyInfo"
+    "wolfInfo wolfInfo wolfMock"
+    "travelMock travelInfo travelInfo";
+}
+#melodyMock {
+    grid-area: melodyMock;
+}
+#melodyInfo {
+    grid-area: melodyInfo;
+}
+#wolfMock {
+    grid-area: wolfMock;
+}
+#wolfInfo {
+    grid-area: wolfInfo;
+}
+#travelMock {
+    grid-area: travelMock;
+}
+#travelInfo {
+    grid-area: travelInfo;
+}
+.mySkills {
+    justify-content: center;
+}
+@media only screen and (max-width: 600px){
+    .flexContainer{
+        flex-direction: column;
+    }
+    .skillCard {
+        width: 90%;
+    }
+    .workGrid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "melodyMock"
+        "melodyInfo"
+        "wolfMock"
+        "wolfInfo"
+        "travelMock"
+        "travelInfo"
+    }
+    .caseStudyInfo {
+        height: 320px;
+    }
+}
